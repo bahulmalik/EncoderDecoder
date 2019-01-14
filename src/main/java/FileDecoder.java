@@ -11,7 +11,7 @@ public class FileDecoder {
 
 
         try {
-            File decodedFile = new File(FileEncoder.getResourcePath() + "/DecodedFile.jpg");
+            File decodedFile = new File(FileResourcePath.getResourcePath() + "/DecodedFile.jpg");
             final String content = new String(Files.readAllBytes(Paths.get(getClass().getResource(fileToBeDecoded).toURI())));
 
             byte[] decodedBytes = Base64
